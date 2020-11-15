@@ -1,0 +1,42 @@
+<h1>Dahsboard Cafetería</h1>
+<br>
+
+<h4>  Un gráfico que muestre las ventas mensuales de los últimos 12 meses</h4>
+
+<%= line_chart @sales_month %>
+
+<h4> Un gráfico que muestre la cantiad de ventas mensual de los últimos 12 meses.</h4>
+
+<%= column_chart @quantity_month %>
+
+
+<h4> Un gráfico que muestre el promedio de venta mensual de los últimos 12 meses</h4>
+
+<%= line_chart @sales_prom %>
+
+
+<h4> Ventas mensuales según el nombre del cafe:</h4>
+
+<br>
+
+<h4>Últimos 12 meses:</h5>
+
+<%= pie_chart @quantity_product_12 %>
+
+<br>
+
+<h4>Últimos 6 meses:</h5>
+
+<%= pie_chart @quantity_product_6 %>
+
+<br>
+
+<h4>Últimos 3 meses:</h5>
+
+<%= pie_chart @quantity_product_3 %>
+
+<br>
+
+<h4>Último 1 mes:</h5>
+
+<%= pie_chart @quantity_product_1 %>
